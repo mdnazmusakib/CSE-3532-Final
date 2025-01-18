@@ -4,6 +4,9 @@ import './index.css'
 import App from './App.jsx'
 
 import Home from './Components/All/Home.jsx';
+import Music from './Components/Music/Music.jsx';
+import Comedy from './Components/Comedy/Comedy.jsx';
+import Drawing from './Components/Drawing/Drawing.jsx';
 
 import {
   createBrowserRouter,
@@ -18,20 +21,20 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        // element: <Home></Home>,
-        element: <h1>all</h1>
+         element: <Home></Home>,
+        // element: <h1>all</h1>
       },
       {
         path: "/music",
-        element: <h1>Music</h1>,
+        element: <Music></Music>,
       },
       {
         path: "/comedy",
-        element: <h1>Comedy</h1>
+        element: <Comedy></Comedy>,
       },
       {
         path: "/drawing",
-        element: <h1>Drawing</h1>
+        element: <Drawing/>
       },
     ]
   },

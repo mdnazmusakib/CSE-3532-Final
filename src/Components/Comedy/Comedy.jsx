@@ -6,7 +6,7 @@ export default function Home() {
   const [allData, setAllData] = useState([])
 
   useEffect(() => {
-    fetch('https://openapi.programming-hero.com/api/videos/category/1000')
+    fetch('https://openapi.programming-hero.com/api/videos/category/1003')
       .then(response => response.json())
       .then(data => setAllData(data.data || []))
   }, []) // Added dependency array to prevent infinite loop
